@@ -1,4 +1,4 @@
-# Automatic Hyperparameter Tuning using TPE with Hyperopt
+![image](https://github.com/m-umar-j/Auto-hype/assets/132677327/fc6da6f5-69d1-4b4d-b808-2d7f190786ff)# Automatic Hyperparameter Tuning using TPE with Hyperopt
 
 This repository demonstrates how to perform automatic hyperparameter tuning for machine learning models using Tree-structured Parzen Estimator (TPE) algorithm with Hyperopt. Specifically, it focuses on tuning hyperparameters for Support Vector Machines (SVM), Random Forest, and Logistic Regression models using TPE.
 
@@ -34,7 +34,15 @@ After hyperparameter tuning, learning curves are plotted for three instances of 
 - **HyperOpt**: Hyperparameters optimized using Hyperopt with TPE
 - **Random**: Randomly chosen hyperparameters
 
-Learning curves illustrate the model's performance on training and cross-validation sets across varying training sizes.
+### Learning Curves of this model, HyperOpt and random selection of hyperparameters
+![image](https://github.com/m-umar-j/Auto-hype/assets/132677327/dc6de72c-b48d-48e2-8425-9c00c28cd6c2)
+
+
+Learning curves illustrate the model's performance on training and cross-validation sets across varying training sizes. 
+
+### Plot of ROC AUC score vs trial number for this model
+![image](https://github.com/m-umar-j/Auto-hype/assets/132677327/23216823-76f3-4a44-a955-b586d045bd0b)
+
 
 
 
