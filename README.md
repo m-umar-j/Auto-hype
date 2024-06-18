@@ -26,6 +26,23 @@ The objective function (`objective_function`) evaluates each set of hyperparamet
 ## TPE Hyperparameter Optimization
 
 Using Hyperopt, TPE algorithm optimizes the hyperparameters for each model type over a predefined number of trials (`max_evals`). The best set of hyperparameters for each model is printed after optimization.
+## Best Hyperparameters Found
+The results from TPE optimization yield the best hyperparameters for each model. These hyperparameters are compared with those obtained from the initial random search to demonstrate the effectiveness of TPE in improving model performance.
+Random forest was the best performing model in both cases.
+For HyperOpt, the best set of hyperparameters with ROC AUC score 0.9462645 are:
+
+Best parameters for random_forest: {'criterion': 0,
+ 'max_depth': 990.0,
+ 'min_samples_leaf': 2.0,
+ 'min_samples_split': 3.0,
+ 'n_estimators': 450.0}
+
+For this model, the best set of hyperparameters with ROC AUC score 0.94467389 are:
+{'n_estimators': 64,
+ 'max_depth': 5,
+ 'min_samples_split': 2,
+ 'min_samples_leaf': 6}
+
 
 ## Learning Curve Plotting
 
