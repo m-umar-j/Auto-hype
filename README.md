@@ -5,7 +5,7 @@ This repository demonstrates how to perform automatic hyperparameter tuning for 
 ## Dataset
 
 The example uses the breast cancer dataset (`The_Cancer_data_1500_V2.csv`) for binary classification. The dataset is preprocessed to split features (`X`) and target (`Y`), followed by a train-test split.
-
+dataset: https://www.kaggle.com/datasets/rabieelkharoua/cancer-prediction-dataset
 ## Models and Hyperparameter Spaces
 
 Three models are considered with their respective hyperparameter spaces defined:
