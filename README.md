@@ -1,6 +1,7 @@
-![image](https://github.com/m-umar-j/Auto-hype/assets/132677327/fc6da6f5-69d1-4b4d-b808-2d7f190786ff)# Automatic Hyperparameter Tuning using TPE with Hyperopt
+![image](https://github.com/m-umar-j/Auto-hype/assets/132677327/b349be90-40ac-489b-832c-cd281a784764)
+# Automatic Hyperparameter Tuning using TPE with Hyperopt
 
-This repository demonstrates how to perform automatic hyperparameter tuning for machine learning models using Tree-structured Parzen Estimator (TPE) algorithm with Hyperopt. Specifically, it focuses on tuning hyperparameters for Support Vector Machines (SVM), Random Forest, and Logistic Regression models using TPE.
+This repository demonstrates how to perform automatic hyperparameter tuning for machine learning models using the Tree-structured Parzen Estimator (TPE) algorithm and compares it with Hyperopt. Specifically, it uses TPE to tune hyperparameters for Support Vector Machines (SVM), Random Forest, and Logistic Regression models.
 
 ## Dataset
 
@@ -25,23 +26,23 @@ The objective function (`objective_function`) evaluates each set of hyperparamet
 
 ## TPE Hyperparameter Optimization
 
-Using Hyperopt, TPE algorithm optimizes the hyperparameters for each model type over a predefined number of trials (`max_evals`). The best set of hyperparameters for each model is printed after optimization.
+TPE algorithm optimizes the hyperparameters for each model type over a predefined number of trials (`max_evals`). The best set of hyperparameters for each model is printed after optimization.
 ## Best Hyperparameters Found
 The results from TPE optimization yield the best hyperparameters for each model. These hyperparameters are compared with those obtained from the initial random search to demonstrate the effectiveness of TPE in improving model performance.
 Random forest was the best performing model in both cases.
-For HyperOpt, the best set of hyperparameters with ROC AUC score 0.9462645 are:
+For HyperOpt, the best set of hyperparameters with ROC AUC score 0.94510 are:
 
 Best parameters for random_forest: {'criterion': 0,
- 'max_depth': 990.0,
- 'min_samples_leaf': 2.0,
- 'min_samples_split': 3.0,
- 'n_estimators': 450.0}
+ 'max_depth': 350,
+ 'min_samples_leaf': 5,
+ 'min_samples_split': 8,
+ 'n_estimators': 600}
 
-For this model, the best set of hyperparameters with ROC AUC score 0.94467389 are:
-{'n_estimators': 64,
- 'max_depth': 5,
- 'min_samples_split': 2,
- 'min_samples_leaf': 6}
+For this model, the best set of hyperparameters with ROC AUC score 0.944430 are:
+{'n_estimators': 68,
+ 'max_depth': 11,
+ 'min_samples_split': 4,
+ 'min_samples_leaf': 8}
 
 
 ## Learning Curve Plotting
@@ -51,8 +52,9 @@ After hyperparameter tuning, learning curves are plotted for three instances of 
 - **HyperOpt**: Hyperparameters optimized using Hyperopt with TPE
 - **Random**: Randomly chosen hyperparameters
 
-### Learning Curves of this model, HyperOpt and random selection of hyperparameters
-![image](https://github.com/m-umar-j/Auto-hype/assets/132677327/dc6de72c-b48d-48e2-8425-9c00c28cd6c2)
+### Learning Curves of this model, HyperOpt, and random selection of hyperparameters
+![image](https://github.com/m-umar-j/Auto-hype/assets/132677327/880e853d-1fa3-4157-a4db-c9b9502b25d4)
+
 
 
 Learning curves illustrate the model's performance on training and cross-validation sets across varying training sizes. 
