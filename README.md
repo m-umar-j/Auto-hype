@@ -58,7 +58,8 @@ After hyperparameter tuning, learning curves are plotted for three instances of 
 Learning curves illustrate the model's performance on training and cross-validation sets across varying training sizes. 
 
 ### Plot of ROC AUC score vs trial number for this model
-![image](https://github.com/m-umar-j/Auto-hype/assets/132677327/23216823-76f3-4a44-a955-b586d045bd0b)
+![image](https://github.com/m-umar-j/Auto-hype/assets/132677327/31ced5bf-0f2f-4013-b10f-90dccbba36e5)
+
 
 
 
